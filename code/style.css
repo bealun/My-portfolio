@@ -1,2 +1,62 @@
 /* font-family: 'Montserrat', ;
 font-family: 'Roboto', ; */
+body {
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 22px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(126, 126, 126, 0.61)), url(img/pattern.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  /* position: relative;
+  display: flex; */
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 140px;
+  left: 8%;
+  width: 50%;
+}
+
+.title p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 10px 0px;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+}
+
+.highlight {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.header-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  filter: grayscale(80%);
+  bottom: 0;
+  float: right;
+  margin: 20px;
+}
