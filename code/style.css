@@ -20,28 +20,16 @@ header {
 
 .title {
   position: absolute;
-  top: 140px;
+  top: 100px;
   left: 8%;
   width: 50%;
 }
 
-.title p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  margin-top: 0;
-}
-
 .title h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 200;
   margin: 10px 0px;
-}
-
-.title h1 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 5px;
 }
 
 .highlight {
@@ -49,14 +37,77 @@ header {
   font-size: 26px;
 }
 
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+.title p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
 .header-img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   border-style: solid;
   filter: grayscale(80%);
   bottom: 0;
-  float: right;
+  right: 30px;
   margin: 20px;
+  position: absolute;
+}
+
+.icons {
+  position: absolute; 
+  top: 100px;
+  right: 10%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons a {
+  margin: 10px;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-dot {
+  height: 3px;
+  width: 50px;
+  background: red;
+  position: relative;
+  float:left;
+  top: 12px;
+  margin-right: 10px;  
+}
+
+.line-dot::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  right: -1px;
+  border-radius: 50%;
+  background: red;
 }
