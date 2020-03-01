@@ -119,6 +119,9 @@ header {
   max-width: 90%;
   height: 300px;
   padding: 30px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -200,4 +203,28 @@ h4 {
   font-weight: bolder;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.knowledge {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h5 {
+  text-transform: uppercase;
+  background-color: rgb(127, 155, 197);
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.child.know {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
