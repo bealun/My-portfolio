@@ -229,6 +229,7 @@ h4:hover {
   justify-content: center;
   align-items: flex-start;
   margin: 40px 20px;
+  max-width: 100%;
 }
 
 #completedRepos a {
