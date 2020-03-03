@@ -201,6 +201,7 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   color: rgb(92, 122, 115);
   margin: 10px 0px;
+  text-decoration: none;
 }
 
 h4:hover {
@@ -234,7 +235,45 @@ h4:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Thought articles */
+.thoughts {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(240, 236, 233);
+  max-width: 90%;
+  padding: 30px 10%;
+}
 
+.sprint-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}
+
+.sprint-article a {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  width: 400px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.sprint-article img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.sprint-article img:hover {
+  filter: brightness(100%);
+}
+
+/* Skill section */
 .knowledge {
   display: flex;
   justify-content: space-around;
@@ -273,6 +312,7 @@ h5 {
   margin: 8px;
 }
 
+/* Work links */
 .more-info {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
@@ -324,7 +364,7 @@ h5 {
   box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.767), 0 0 20px 20px rgba(255, 255, 255, 0.753);
 }
 
-/* Contact me section */
+/* Contact me section | scale down */
 .contact-me {
   font-size: 18px;
   line-height: 10px;
@@ -354,6 +394,7 @@ h6 {
   text-decoration: underline;
 }
 
+/* Media query */
 @media (max-width: 667px) {
   .header-img {
     width: 200px;
