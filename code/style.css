@@ -1,10 +1,9 @@
-/* font-family: 'Montserrat', ;
-font-family: 'Roboto', ; */
 body {
   background: white;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 22px;
+  line-height: 30px;
 }
 
 header {
@@ -23,12 +22,13 @@ header {
   top: 100px;
   left: 8%;
   width: 50%;
+  line-height: 50px;
 }
 
 .title h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 100;
   margin: 10px 0px;
 }
 
@@ -40,7 +40,7 @@ header {
 .title h1 {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 5px;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
   text-transform: lowercase;
 }
@@ -90,6 +90,7 @@ header {
   align-items: center;
 }
 
+/* Introduction */
 .red-line {
   height: 3px;
   width: 50px;
@@ -117,8 +118,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(240, 236, 233);
   max-width: 90%;
-  height: 300px;
-  padding: 30px 10%;
+  padding: 50px 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +136,11 @@ h3 {
   font-size: 30px;
 }
 
+.text-area {
+  margin: 10px 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .tech {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -144,9 +149,10 @@ h3 {
   padding: 30px 10%;
 }
 
-.code.tags {
+.code-tags {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .tags {
@@ -169,23 +175,23 @@ h3 {
 #completedRepos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: stretch;
   align-items: center;
-  width: 40%;
+  width: 30%;
   padding: 20px;
-  /* background-color: white; */
+  margin: 0px 20px;
 }
 
 #completedRepos img {
   width: 300px;
   object-fit: cover;
   height: 200px;
-  /* opacity: 0.7; */
   filter: brightness(70%);
+  display: flex;
+  justify-content: flex-start;
 }
 
 #completedRepos img:hover {
-  /* opacity: 1; */
   filter: brightness(100%);
 }
 
@@ -193,7 +199,12 @@ h4 {
   font-size: 20px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(124, 160, 151);
+  color: rgb(92, 122, 115);
+  margin: 10px 0px;
+}
+
+h4:hover {
+  text-decoration: underline;
 }
 
 #skillText {
@@ -203,11 +214,15 @@ h4 {
   color: #111111;
 }
 
+#skillText:hover {
+  font-style: italic;
+}
+
 #finishedProjects {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   margin: 40px 20px;
 }
 
@@ -218,6 +233,7 @@ h4 {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 .knowledge {
   display: flex;
@@ -244,11 +260,17 @@ h5 {
   margin: 10px 5px;
 }
 
-.child.know {
+.child-know {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+}
+
+.child-know p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 8px;
 }
 
 .more-info {
@@ -256,7 +278,6 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(206, 189, 176);
   max-width: 90%;
-  height: 300px;
   padding: 30px 10%;
   display: flex;
   justify-content: space-around;
@@ -277,6 +298,10 @@ h5 {
   margin: 10px;
 }
 
+.footer-links:hover {
+  font-style: oblique;
+}
+
 .btn-footer-img {
   height: 60px;
   width: 60px;
@@ -295,11 +320,118 @@ h5 {
   color: white;
 }
 
-.more-info p:hover {
-  font-style: oblique;
-}
-
 .footer-btn:hover {
   box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.767), 0 0 20px 20px rgba(255, 255, 255, 0.753);
 }
+
+/* Contact me section */
+.contact-me {
+  font-size: 18px;
+  line-height: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(0, 0, 109);
+  color: white;
+  max-width: 90%;
+  height: 300px;
+  padding: 30px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+.email,
+.phone {
+  text-decoration: none;
+  color: white;
+}
+
+.email:hover,
+.phone:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 667px) {
+  .header-img {
+    width: 200px;
+    height: 200px;
+    top: 300px;
+    right: 0;
+  }
+
+  .btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  .icons {
+    top: 0;
+    padding: 10px;
+    right: 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    top: 30;
+  }
+
+  .title h2,
+  .highlight {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .intro {
+    padding: 30px 10%;
+  }
+
+  .text-area {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  #finishedProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .knowledge {
+    margin: 20px;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  .child-know {
+    align-items: center;
+  }
+
+  .btn-footer-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-btn {
+    padding: 20px;
+  }
+
+  .more-info {
+    padding: 30px 5%;
+  }
+
+  .links {
+    justify-content: space-between;
+  }
+}
+
 
