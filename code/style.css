@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-size: 22px;
   line-height: 30px;
+  overflow-x: hidden;
 }
 
 header {
@@ -139,6 +140,9 @@ h3 {
 .text-area {
   margin: 10px 10%;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 35px;
 }
 
 .tech {
@@ -146,7 +150,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   height: auto;
   margin: 10px 0px;
-  padding: 30px 10%;
+  padding: 30px 20%;
 }
 
 .code-tags {
