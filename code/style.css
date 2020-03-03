@@ -7,14 +7,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(126, 126, 126, 0.61)), url(img/pattern.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
-  /* position: relative;
-  display: flex; */
   color: white;
 }
 
@@ -53,6 +52,7 @@ header {
   margin-top: 0;
 }
 
+/* Profile pic */
 .header-img {
   width: 250px;
   height: 250px;
@@ -66,6 +66,7 @@ header {
   position: absolute;
 }
 
+/* Header links */
 .icons {
   position: absolute; 
   top: 60px;
@@ -145,6 +146,7 @@ h3 {
   line-height: 35px;
 }
 
+/* Technical intro */
 .tech {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -153,6 +155,12 @@ h3 {
   padding: 30px 20%;
 }
 
+.extra {
+  color: red;
+  font-weight: bold;
+}
+
+/* Featured projects */
 .code-tags {
   display: flex;
   justify-content: flex-start;
@@ -172,8 +180,8 @@ h3 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(240, 236, 233);
-  max-width: 90%;
-  padding: 30px 10%;
+  max-width: 100%;
+  padding: 30px 10px;
 }
 
 #completedRepos {
@@ -238,6 +246,7 @@ h4:hover {
   font-weight: bolder;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  margin: 10px;
 }
 
 /* Thought articles */
