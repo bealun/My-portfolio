@@ -184,7 +184,7 @@ h3 {
   padding: 30px 10px;
 }
 
-#completedRepos {
+.completedRepos {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -194,7 +194,7 @@ h3 {
   margin: 0px 20px;
 }
 
-#completedRepos img {
+.completedRepos img {
   width: 300px;
   object-fit: cover;
   height: 200px;
@@ -203,7 +203,7 @@ h3 {
   justify-content: flex-start;
 }
 
-#completedRepos img:hover {
+.completedRepos img:hover {
   filter: brightness(100%);
 }
 
@@ -220,18 +220,18 @@ h4:hover {
   text-decoration: underline;
 }
 
-#skillText {
+.skillText {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   text-align: left;
   color: #111111;
 }
 
-#skillText:hover {
+.skillText:hover {
   font-style: italic;
 }
 
-#finishedProjects {
+.finishedProjects {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -240,7 +240,7 @@ h4:hover {
   max-width: 100%;
 }
 
-#completedRepos a {
+.completedRepos a {
   color: rgb(158, 115, 115);
   text-decoration: none;
   font-weight: bolder;
@@ -454,7 +454,7 @@ h6 {
     line-height: 35px;
   }
 
-  #finishedProjects {
+  .finishedProjects {
     display: flex;
     flex-direction: column;
     align-items: center;
