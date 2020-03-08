@@ -424,6 +424,7 @@ h6 {
   .header-img {
     width: 200px;
     height: 200px;
+    margin-right: 2px;
     top: 330px;
     right: 0;
   }
