@@ -66,7 +66,7 @@ header {
   border-radius: 50%;
   border-style: solid;
   filter: grayscale(80%);
-  top: 250px;
+  top: 300px;
   right: 30px;
   margin: 20px;
   position: absolute;
@@ -147,7 +147,7 @@ h3 {
 .text-area {
   margin: 10px 10%;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 18px;
   line-height: 35px;
 }
@@ -426,6 +426,10 @@ h6 {
     height: 200px;
     top: 330px;
     right: 0;
+  }
+
+  h1 {
+    margin-top: 10px;
   }
 
   .btn {
