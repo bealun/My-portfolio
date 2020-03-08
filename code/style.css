@@ -494,6 +494,10 @@ h6 {
     align-items: center;
   }
 
+  .knowledge h5 {
+    font-size: 22px;
+  }
+
   .child-know {
     align-items: center;
     max-width: 300px;
