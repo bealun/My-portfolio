@@ -1,3 +1,7 @@
+html {
+  margin: 0;
+}
+
 body {
   background: white;
   font-family: 'Roboto', sans-serif;
@@ -5,6 +9,7 @@ body {
   font-size: 22px;
   line-height: 30px;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* Header */
@@ -196,12 +201,13 @@ h3 {
 }
 
 .completedRepos img {
-  width: 300px;
+  max-width: 300px;
   object-fit: cover;
   height: 200px;
   filter: brightness(70%);
   display: flex;
   justify-content: flex-start;
+  transition: all .3s ease-in-out;
 }
 
 .completedRepos img:hover {
@@ -257,6 +263,8 @@ h4:hover {
   background-color: rgb(240, 236, 233);
   max-width: 90%;
   padding: 30px 10%;
+  border-top: 2px dotted gray;
+  border-bottom: 2px dotted gray;
 }
 
 .sprint-article {
@@ -272,16 +280,17 @@ h4:hover {
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
-  width: 400px;
+  max-width: 400px;
   text-decoration: none;
   text-align: left;
 }
 
 .sprint-article img {
-  width: 400px;
+  max-width: 400px;
   height: 300px;
   object-fit: cover;
   filter: brightness(80%);
+  transition: all .3s ease-in-out;
 }
 
 .sprint-article img:hover {
@@ -295,6 +304,7 @@ h4:hover {
   align-items: flex-start;
   margin: 20px;
   padding: 20px;
+  max-width: 100%;
 }
 
 .more {
@@ -414,7 +424,7 @@ h6 {
   .header-img {
     width: 200px;
     height: 200px;
-    top: 300px;
+    top: 330px;
     right: 0;
   }
 
@@ -438,7 +448,7 @@ h6 {
   .title h2,
   .highlight {
     font-size: 18px;
-    width: 500px;
+    max-width: 500px;
   }
 
   .title h1 {
@@ -467,31 +477,54 @@ h6 {
     justify-content: flex-start;
   }
 
+  .sprint-article a {
+    align-items: center;
+  }
+
+  .sprint-article img {
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
   .knowledge {
     margin: 20px;
     padding: 0;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
 
   .child-know {
     align-items: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .child-know p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .btn-footer-img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
 
   .footer-btn {
-    padding: 20px;
+    padding: 10px;
   }
 
   .more-info {
-    padding: 30px 5%;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .more-info p {
+    font-size: 16px;
   }
 
   .links {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
