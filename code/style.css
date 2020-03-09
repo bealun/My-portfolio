@@ -267,6 +267,10 @@ h4:hover {
   border-bottom: 2px dotted gray;
 }
 
+.section-thoughts {
+  display: flex;
+}
+
 .sprint-article {
   display: flex;
   flex-direction: column;
@@ -420,13 +424,31 @@ h6 {
 }
 
 /* Media query */
+@media (max-width: 1024px) {
+  .icons {
+    right: 0;
+  }
+
+  .header-img {
+    right: 0;
+  }
+
+  .finishedProjects {
+    margin: 10px 0px;
+    justify-content: space-evenly;
+  }
+
+  .section-thoughts {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 667px) {
   .header-img {
     width: 200px;
     height: 200px;
     margin-right: 2px;
     top: 330px;
-    right: 0;
   }
 
   h1 {
@@ -441,7 +463,6 @@ h6 {
   .icons {
     top: 0;
     padding: 10px;
-    right: 0;
   }
 
   .title {
@@ -484,6 +505,7 @@ h6 {
 
   .sprint-article a {
     align-items: center;
+    margin: 20px 0px;
   }
 
   .sprint-article img {
