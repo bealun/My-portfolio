@@ -96,6 +96,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* Introduction */
@@ -158,7 +163,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   height: auto;
   margin: 10px 0px;
-  padding: 30px 30px;
+  padding: 30px 15%;
 }
 
 .tech .text-area {
@@ -386,14 +391,24 @@ h4:hover {
 }
 
 /* Skill section */
-.knowledge {
+.mySkills {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 236, 233);
+  max-width: 100%;
+}
+
+.knowledge {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 20px;
   padding: 20px 0px;
-  max-width: 100%;
-  background-color: rgb(240, 236, 233);
+  /* max-width: 100%; */
+  /* background-color: rgb(240, 236, 233); */
 }
 
 .more {
@@ -409,15 +424,17 @@ h5 {
   padding: 5px;
   text-align: center;
   box-sizing: border-box;
-  font-size: 30px;
+  font-size: 22px;
   margin: 10px 5px;
 }
 
 .child-know {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
+  width: 20%;
+  margin: 0px 20px;
 }
 
 .child-know p {
@@ -468,6 +485,7 @@ h5 {
   padding: 40px;
   margin: 10px;
   border-radius: 50%;
+  transition: .4s ease-in-out;
 }
 
 .more-info p {
@@ -475,7 +493,8 @@ h5 {
 }
 
 .footer-btn:hover {
-  box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.767), 0 0 20px 20px rgba(255, 255, 255, 0.753);
+  box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.767), 0 0 20px 20px rgba(255, 255, 255, 0.753);
+  transform: scale(0.8);
 }
 
 /* Contact me section | scale down */
