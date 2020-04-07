@@ -178,6 +178,7 @@ h3 {
 /* Featured projects */
 .code-tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -314,6 +315,7 @@ h4:hover {
   padding: 1px 4px;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Thought articles */
@@ -327,8 +329,8 @@ h4:hover {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  max-width: 90%;
-  padding: 30px 10%;
+  max-width: 100%;
+  /* padding: 30px 10%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -397,6 +399,7 @@ h4:hover {
   align-items: center;
   background-color: rgb(240, 236, 233);
   max-width: 100%;
+  margin: 0;
 }
 
 .knowledge {
@@ -607,8 +610,13 @@ h6 {
     justify-content: flex-start;
   }
 
+  .otherProjects {
+    width: 90%;
+  }
+
   .sprint-article a {
     align-items: center;
+    flex-wrap: wrap;
     margin: 20px 0px;
   }
 
@@ -631,6 +639,7 @@ h6 {
 
   .child-know {
     align-items: center;
+    flex-wrap: wrap;
     max-width: 300px;
     margin-bottom: 30px;
   }
