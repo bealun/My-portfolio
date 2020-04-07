@@ -263,7 +263,7 @@ h4:hover {
   font-weight: bolder;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  /* margin: 10px; */
+  margin: 10px;
 }
 
 /* List of Projects  */
@@ -323,13 +323,14 @@ h4:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
 }
 
 .thoughts {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  max-width: 100%;
+  width: 100%;
   /* padding: 30px 10%; */
   display: flex;
   flex-wrap: wrap;
@@ -337,7 +338,7 @@ h4:hover {
 }
 
 .moreThoughts {
-  width: 80%;
+  width: 60%;
   text-align: left;
 }
 
@@ -348,18 +349,12 @@ h4:hover {
 .moreThoughts p {
   color: black;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
 
 .moreThoughts p:hover {
   font-style: italic;
-}
-
-.articles-thoughts {
-  display: flex;
-}
-
-.section-thoughts {
-  display: flex;
 }
 
 .sprint-article {
@@ -540,9 +535,17 @@ h6 {
     right: 0;
   }
 
+  .child-know p {
+    text-align: center;
+  }
+
   .finishedProjects {
     margin: 10px 0px;
     justify-content: space-evenly;
+  }
+
+  .moreThoughts {
+    width: 80%;
   }
 
   .section-thoughts {
