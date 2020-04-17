@@ -205,19 +205,20 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 30%;
+  width: 40%;
   padding: 20px;
   margin: 0px 20px;
 }
 
 .completedRepos img {
-  width: 300px;
+  width: 400px;
   object-fit: cover;
-  height: 200px;
+  height: 300px;
   filter: brightness(70%);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   transition: all .3s ease-in-out;
+  margin: 0;
 }
 
 .completedRepos img:hover {
@@ -225,9 +226,9 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgb(92, 122, 115);
   margin: 10px 0px;
   text-decoration: none;
@@ -238,8 +239,8 @@ h4:hover {
 }
 
 .skillText {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   text-align: left;
   color: #111111;
 }
@@ -262,8 +263,9 @@ h4:hover {
   text-decoration: none;
   font-weight: bolder;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 10px;
+  width: 400px;
 }
 
 /* List of Projects  */
@@ -292,6 +294,7 @@ h4:hover {
 }
 
 .repoList p {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 18px;
   color: black;
@@ -329,13 +332,17 @@ h4:hover {
 
 .thoughts {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   width: 100%;
   /* padding: 30px 10%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.thoughts .skillText {
+  margin-top: 3px;
 }
 
 .moreThoughts {
@@ -350,7 +357,7 @@ h4:hover {
 .moreThoughts p {
   color: black;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
 }
 
@@ -409,10 +416,7 @@ h4:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-top: 20px;
-  padding: 20px 0px;
-  /* max-width: 100%; */
-  /* background-color: rgb(240, 236, 233); */
+  margin-bottom: 20px;
 }
 
 .more {
@@ -434,6 +438,7 @@ h5 {
 
 .child-know {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -444,7 +449,8 @@ h5 {
 .child-know p {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  margin: 8px;
+  margin: 4px;
+  text-align: center;
 }
 
 /* Work links */
@@ -545,6 +551,21 @@ h6 {
     text-align: center;
   }
 
+  .completedRepos {
+    margin: 0;
+    padding: 0;
+    width: 50%
+  }
+
+  .completedRepos img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .completedRepos a {
+    width: 300px;
+  }
+
   .finishedProjects {
     margin: 10px 0px;
     justify-content: space-evenly;
@@ -565,6 +586,25 @@ h6 {
     height: 200px;
     margin-right: 2px;
     top: 330px;
+  }
+
+  .completedRepos {
+    width: 80%;
+    margin: 20px 0px;
+  }
+
+  .completedRepos a {
+    width: 300px;
+  }
+
+  .completedRepos img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .completedRepos .skillText {
+    font-size: 16px;
+    margin: 0px 0px 8px 0px;
   }
 
   h1 {
@@ -613,7 +653,7 @@ h6 {
 
   .text-area {
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 35px;
   }
 
@@ -629,7 +669,7 @@ h6 {
   }
 
   .sprint-article a {
-    align-items: center;
+    align-items: flex-start;
     max-width: 100%;
     flex-wrap: wrap;
     margin: 20px 0px;
@@ -668,10 +708,26 @@ h6 {
     margin-bottom: 30px;
     text-align: center;
   }
+  
+  .repoList {
+    margin: 10px 0px;
+  }
+
+  .repoList p {
+    font-size: 16px;
+  }
+
+  .repoTitle {
+    font-size: 18px;
+  }
+
+  .thoughts {
+    font-family: 'Roboto', sans-serif;
+  }
 
   .child-know p {
     font-size: 16px;
-    line-height: 20px;
+    margin: 3px;
   }
 
   .btn-footer-img {
