@@ -310,7 +310,7 @@ h4:hover {
 .repoTitle {
   font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
   color: rgb(83, 47, 117)
 }
 
@@ -360,6 +360,7 @@ h4:hover {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   text-align: left;
+  margin: 8px;
 }
 
 .moreThoughts p:hover {
